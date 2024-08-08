@@ -35,10 +35,10 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-import { TOTAL_SCORE as total } from "../page"
+// import { TOTAL_SCORE as total } from "../page"
 
 export function PieChartComponent({score}: {score: number}) {
-  const incorrect = total - score
+  const incorrect = 15 - score
 
   React.useEffect(() => {
     chartData[0].value = score
@@ -99,10 +99,10 @@ export function PieChartComponent({score}: {score: number}) {
       </CardContent>
       <CardFooter className="flex-col gap-2 text-sm">
         <div className="flex items-center gap-2 font-medium leading-none">
-          Score: {score} out of {total}
+          Score: {score} out of {15}
         </div>
         <div className="leading-none text-muted-foreground">
-          {((score / total) * 100).toFixed(1)}% Correct
+          {((score / 15) * 100).toFixed(1)}% Correct
         </div>
       </CardFooter>
     </Card>

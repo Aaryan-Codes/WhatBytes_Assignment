@@ -7,7 +7,7 @@ import { PieChartComponent } from "./components/PieChartComponent";
 import SyllabusCard from "./components/SyllabusAnnalytics/SyllabusCard";
 import { UpdateDialog } from "./components/UpdateDialog";
 
-export const TOTAL_SCORE = 15;
+// export const TOTAL_SCORE = 15;
 
 
 export default function Home() {
@@ -75,7 +75,7 @@ export default function Home() {
               <div className="flex gap-4 text-sm items-center">
                 <span className="bg-gray-200 p-2 rounded-full">✅</span>
                 <span>
-                  <p className="font-bold">{score}/{TOTAL_SCORE}</p>
+                  <p className="font-bold">{score}/{15}</p>
                   <p>CORRECT ANSWERS</p>
                 </span>
               </div>
@@ -124,10 +124,10 @@ export default function Home() {
           </div>
           <div className="w-full border-2 rounded-md p-4">
             <div>
-              <div className="w-full flex justify-between"><p className="font-bold ">Question Analysis</p><p>{score}/{TOTAL_SCORE}</p> </div>
+              <div className="w-full flex justify-between"><p className="font-bold ">Question Analysis</p><p>{score}/{15}</p> </div>
               
               <p className="text-sm">
-                <b>You scored {score} question correct out of {TOTAL_SCORE}.</b><br/>
+                <b>You scored {score} question correct out of {15}.</b><br/>
                 However it still needs some improvements
               </p>
             </div>
